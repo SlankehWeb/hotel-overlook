@@ -1,6 +1,6 @@
-import './App.css';
+import './components/global/global.scss';
 import AppRouter from './components/approuter/approuter';
-import NavBar from './components/global/navbar/navbar';
+import NavBar from './components/global/navbar/navbar'
 
 function App() {
   return (

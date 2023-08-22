@@ -1,0 +1,124 @@
+ html {
+	font-size: 17px;
+}
+header {
+	text-align: center;
+	position: fixed;
+	width: 100vw;
+    padding-top: 2%;
+	background: black;
+}
+.logo {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	a {
+		color: rgb(255, 255, 255);
+	}
+}
+a {
+	text-decoration: none;
+}
+nav {
+	position: absolute;
+	text-align: left;
+	top: 100%;
+	background: black;
+	width: 100vw;
+	transform: scale(1, 0);
+	transform-origin: top;
+	transition: transform 400ms ease-in-out;
+	a {
+		color: rgb(255, 255, 255);
+		font-size: 1rem;
+		opacity: 0;
+		transition: opacity 150ms ease-in-out;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+	}
+	li {
+		margin: 1.2rem;
+	}
+}
+.nav-toggle {
+	display: none;
+	&:checked {
+		~ {
+			nav {
+				transform: scale(1, 1);
+				a {
+					opacity: 1;
+					transition: opacity 250ms ease-in-out 250ms;
+				}
+			}
+		}
+	}
+}
+.nav-toggle-label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: .8rem;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	span {
+		display: block;
+		background: white;
+		height: 1px;
+		width: 35px;
+		position: relative;
+		&::before {
+			display: block;
+			background: white;
+			height: 1px;
+			width: 35px;
+			position: relative;
+			content: "";
+			position: absolute;
+			bottom: 7px;
+		}
+		&::after {
+			display: block;
+			background: white;
+			height: 1px;
+			width: 35px;
+			position: relative;
+			content: "";
+			position: absolute;
+			top: 7px;
+		}
+	}
+}
+@media screen and (min-width: 800px) {
+	.nav-toggle-label {
+		display: none;
+	}
+	.nav-toggle {
+		display: none;
+	}
+	header {
+		display: grid;
+		grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+	}
+	.logo {
+		grid-column: 2 / 3;
+	}
+	nav {
+		grid-column: 3 / 4;
+		all: unset;
+		a {
+			opacity: 1;
+		}
+		ul {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+}
