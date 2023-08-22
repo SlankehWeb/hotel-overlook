@@ -6,15 +6,15 @@ import Reservation from "../resevation/reservation";
 import Login from "../login/login";
 
 const AppRouter = () => {
-    return (
-      <Routes>
-        <Route index element={<Frontpage/>} />
-        <Route path="/Hoteller" element={<Hotels/>}/>
-        <Route path="/Værelser" element={<Rooms/>} />
-        <Route path="/Reservation" element={<Reservation/>} />
-        <Route path="/Login" element={<Login/>} />
-      </Routes>
-    );
-  };
+  return (
+    <Routes>
+      <Route index element={<Frontpage />} />
+      <Route path="/Hoteller" element={<Hotels />} />
+      <Route path="/Værelser" element={<Rooms />} />
+      <Route path="/Reservation" element={<Reservation />} />
+      <Route path="/Login" element={<Login />} />
+    </Routes>
+  );
+};
 
-  export default AppRouter;
+export default AppRouter;

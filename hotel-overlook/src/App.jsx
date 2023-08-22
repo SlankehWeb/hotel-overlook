@@ -1,11 +1,11 @@
-import './components/global/global.scss';
-import AppRouter from './components/approuter/approuter';
-import NavBar from './components/global/navbar/navbar'
+import "./components/global/global.scss";
+import AppRouter from "./components/approuter/approuter";
+import NavBar from "./components/global/navbar/navbar";
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
       <AppRouter />
     </div>
   );
