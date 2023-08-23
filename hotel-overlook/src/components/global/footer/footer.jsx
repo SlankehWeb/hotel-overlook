@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
 import "./footer.scss";
 
 const GFooter = () => {
@@ -9,7 +11,10 @@ const GFooter = () => {
           <div class="footer-colume-1">
             <p>© 2021 Hotel Overlook. Alle rettigheder forbeholdt.</p>
           </div>
-          <div class="footer-colume-2"></div>
+          <div class="footer-colume-2">
+            <FaFacebookSquare />
+            <FaTwitterSquare />
+          </div>
           <div class="footer-colume-3">
             <ul>
               <li>
