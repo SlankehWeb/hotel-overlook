@@ -12,8 +12,8 @@ const GFooter = () => {
             <p>© 2021 Hotel Overlook. Alle rettigheder forbeholdt.</p>
           </div>
           <div class="footer-colume-2">
-            <FaFacebookSquare />
-            <FaTwitterSquare />
+            <FaFacebookSquare size={"2em"}/>
+            <FaTwitterSquare size={"2em"}/>
           </div>
           <div class="footer-colume-3">
             <ul>
