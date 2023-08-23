@@ -1,5 +1,9 @@
+import Carousel from "./parts/carousel";
+
 const Frontpage = () => {
-  return <></>;
+  return <>
+  <Carousel/>
+  </>;
 };
 
 export default Frontpage;
