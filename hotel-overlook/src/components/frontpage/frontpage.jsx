@@ -5,7 +5,10 @@ const Frontpage = () => {
   return ( 
   <>
   <Carousel />
+  <h3>Sidste nyt</h3>
+  <div className="new">
   <News/>
+  </div>
   </>
   );
 };

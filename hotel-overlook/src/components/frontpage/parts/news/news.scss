@@ -1,0 +1,19 @@
+
+.newsCards{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    .newsCard{
+        flex: 0 1 24%;
+    }
+
+
+}
+
+.new{
+    width: 100vw;
+    overflow: hidden;
+}

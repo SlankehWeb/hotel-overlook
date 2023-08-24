@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./news.scss";
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -19,9 +20,10 @@ const News = () => {
   }, [setNews]);
 
   return (
-    <div className="newsContainer">
+
+    <div className="newsCards">
       {news.slice(-3).map((data) => (
-        <figure className="productCard" key={data.id}>
+        <figure className="newsCard" key={data.id}>
           <img src={`http://localhost:4000/images/${data.image.filename}`} alt="img_news" />
           <h2>{data.title}</h2>
           <p>{data.teaser}</p>
