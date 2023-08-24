@@ -1,5 +1,4 @@
 footer{
-  position: fixed;
   bottom: 0;
   width: 100%;
   padding-top: 1%;
@@ -30,28 +29,7 @@ footer{
 }
 @media screen and (max-width: 600px) {
  .parent {
-  padding-top: 2vh;
-  height: 35vw;
-  padding-bottom: 2vh;
-  .footer-colume-1{
-    position: absolute;
-    top: 70%;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-  .footer-colume-2{
-    position: absolute;
-    left: 34%;
-    top: 42%;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
-  .footer-colume-3{
-    position: absolute;
-    top: 20%;
-    margin-right: 10%;
-    margin-left: 10%;
-  }
+
     ul {
       margin: 0;
       padding: 0;

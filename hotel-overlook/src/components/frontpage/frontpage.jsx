@@ -1,10 +1,11 @@
-import Carousel from "./parts/carousel";
-
+import Carousel from "./parts/carousel/carousel";
+import News from "./parts/news/news";
 
 const Frontpage = () => {
   return ( 
   <>
-  <Carousel/>
+  <Carousel />
+  <News/>
   </>
   );
 };
