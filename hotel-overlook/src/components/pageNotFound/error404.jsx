@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Error404 = () => {
+const ErrorPage = () => {
   return (
     <>
       <h1>Donkey Kong have run out of barrels</h1>
@@ -12,4 +12,4 @@ const Error404 = () => {
   );
 };
 
-export default Error404;
+export default ErrorPage;

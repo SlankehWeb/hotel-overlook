@@ -4,7 +4,8 @@ import Rooms from "../rooms/rooms";
 import Reservation from "../resevation/reservation";
 import Login from "../login/login";
 import Frontpage from "../frontpage/frontpage";
-import Error404 from "../pageNotFound/error404";
+import ErrorPage from "../pageNotFound/error404";
+
 
 const AppRouter = () => {
   return (
@@ -14,7 +15,7 @@ const AppRouter = () => {
       <Route path="/Værelser" element={<Rooms />} />
       <Route path="/Reservation" element={<Reservation />} />
       <Route path="/Login" element={<Login />} />
-      <Route path="*" element={<Error404 />} />
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
 };
