@@ -7,15 +7,15 @@ const GFooter = () => {
   return (
     <>
       <footer>
-        <div class="parent">
-          <div class="footer-colume-1">
+        <div className="parent">
+          <div className="footer-colume-1">
             <p>© 2021 Hotel Overlook. Alle rettigheder forbeholdt.</p>
           </div>
-          <div class="footer-colume-2">
+          <div className="footer-colume-2">
             <FaFacebookSquare size={"2em"}/>
             <FaTwitterSquare size={"2em"}/>
           </div>
-          <div class="footer-colume-3">
+          <div className="footer-colume-3">
             <ul>
               <li>
                 <Link to="/">Forside</Link>
