@@ -4,7 +4,10 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
+// Create a root element for rendering your React app
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Render your React app wrapped in StrictMode and BrowserRouter
 root.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -12,6 +15,7 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
