@@ -10,7 +10,9 @@ const AppRouter = () => {
   return (
     <Routes>
       {/* Define a route for the front page */}
-      <Route index element={<Frontpage />} />
+      <Route path="/" element={<Frontpage />}>
+        <Route path=":newsid" element={<Frontpage/>}/>
+      </Route>
 
       {/* Define a route for the "Hotels" component */}
       <Route path="/Hoteller" element={<Hotels />} />
