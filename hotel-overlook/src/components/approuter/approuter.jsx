@@ -11,7 +11,7 @@ const AppRouter = () => {
     <Routes>
       {/* Define a route for the front page */}
       <Route path="/" element={<Frontpage />}>
-        <Route path=":newsid" element={<Frontpage/>}/>
+        <Route path=":id" element={}/>
       </Route>
 
       {/* Define a route for the "Hotels" component */}
