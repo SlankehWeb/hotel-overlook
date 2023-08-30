@@ -5,13 +5,15 @@ import Reservation from "../resevation/reservation";
 import Login from "../login/login";
 import Frontpage from "../frontpage/frontpage";
 import ErrorPage from "../pageNotFound/error404";
+import NewsDetail from "../frontpage/news details/newsdetails";
 
 const AppRouter = () => {
   return (
     <Routes>
       {/* Define a route for the front page */}
-      <Route path="/" element={<Frontpage />}>
-        <Route path=":id" element={}/>
+      <Route path="/">
+        <Route index element={<Frontpage/>}></Route>
+        <Route path=":id" element={<NewsDetail/>}/>
       </Route>
 
       {/* Define a route for the "Hotels" component */}

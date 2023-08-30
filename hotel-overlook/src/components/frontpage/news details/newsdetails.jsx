@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-const NewsDetails = () => {
+const NewsDetail = () => {
   const [data, setData] = useState([]);
   const { id } = useParams();
 
@@ -28,6 +28,7 @@ const NewsDetails = () => {
     <div className="newsCards" key={data.id}>
       <figure className="newsCard">
       <img src={`http://localhost:4000/images/${data.image.filename}`} alt="img_news" />
+
         <h2>{data.title}</h2>
 
         <p>{data.teaser}</p>
@@ -36,4 +37,4 @@ const NewsDetails = () => {
   );
 };
 
-export default NewsDetails;
+export default NewsDetail;
